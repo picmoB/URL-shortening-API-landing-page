@@ -1,0 +1,312 @@
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: rgb(59, 48, 82);
+    border-radius: 25px;
+    margin-bottom: 50px;
+    transition: 0.5s ease;
+    padding: 10px;
+    font-size: 40px;
+    width: 500px;
+    height: 800px;
+
+    /* Novo dodano!!! */
+    position: absolute;
+    left: 100%;
+    top: 14.5%;
+}
+
+.hamburger-menu>button{
+    color: white;
+    background-color: aqua;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 10px;
+    width: 300px;
+    height: 70px;
+}
+
+.hamburger-menu>a{
+    color: white;
+}
+
+.hamburger-menu-lines {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.hamburger-menu-lines>span{
+    background-color: gray;
+    width: 60px;
+    height: 2px;
+}
+
+.hamburger-line {
+    background-color: gray;
+    width: 400px;
+    height: 1px;
+}
+
+.active {
+    /*
+        Toggling this class must NOT HAVE 'display' property!
+        It is supposed to be added at the appropriate responsive width!
+        'left' or 'right' is the best usage to achieve smooth animation for 'hamburger-menu'.
+    */
+    position: relative;
+    transition: 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0%;
+}
+
+/* Hamburger Menu Lines */
+
+.line {
+    transition: 0.5s;
+}
+
+.line:first-child.active-line {
+    transition: 0.5s;
+    translate: -7px 14px;
+    rotate: -45deg;
+}
+
+.line:nth-child(2).active-line {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.line:last-child.active-line {
+    transition: 0.5s;
+    translate: -7px -17px;
+    rotate: 45deg;
+}
+
+/* ==================== */
+
+@media only screen and (max-width: 1440px) {
+    .hero-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-part-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-part-left>h2{
+        text-align: center;
+    }
+
+    .hero-part-right {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1125px) {
+    .statistics-part-holder {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .statistics-part-div {
+        display: flex;
+        flex-direction: column;
+        background-color: unset;
+        align-items: center;
+        text-align: center;
+    }
+
+    .statistics-part-txt {
+        background-color: white;
+        z-index: 100;
+    }
+
+    #div-02 {
+        margin: 0px;
+    }
+
+    #div-03 {
+        margin: 0px;
+    }
+
+    .blue-line {
+        rotate: 90deg;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer-links-holder {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    /* HAMBURGER MENU!!! */
+
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    .hamburger-menu-lines {
+        display: flex;
+    }
+
+    /* ----------------- */
+
+    .top-part {
+        margin-bottom: 5px;
+    }
+
+    .top-part-left>a:not(:first-child) {
+        display: none;
+    }
+
+    .top-part-right {
+        display: none;
+    }
+
+    .box-paste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copy-paste-link {
+        width: 100%;
+    }
+
+    .btn-input {
+        width: max-content;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .box-paste {
+        width: 100%;
+    }
+
+    .input-part>input{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .hero-part-left>h2{
+        font-size: 60px;
+        line-height: 60px;
+        width: 400px;
+    }
+
+    .hero-part-left>p{
+        font-size: 15px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .hamburger-menu {
+        width: 400px;
+    }
+
+    .hamburger-line {
+        width: 300px;
+    }
+
+    .footer-links-holder {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .box-paste {
+        width: 80%;
+    }
+
+    .last-part-div>button{
+        margin-bottom: 25px;
+    }
+
+    .last-part-div>h2{
+        width: 260px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .hamburger-menu {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .hamburger-menu>button{
+        width: 250px;
+    }
+
+    .hamburger-line {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .hero-part-left>h2{
+        font-size: 60px;
+        line-height: 60px;
+        width: 300px;
+    }
+
+    .hero-part-left>p{
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .hero-part-right {
+        width: 300px;
+        margin-right: 100px;
+    }
+
+    .link-paste-text>p{
+        display: flex;
+        align-self: center;
+        width: 200px;
+    }
+
+    .box-paste {
+        width: 70%;
+    }
+
+    .box-paste>input{
+        width: 100%;
+    }
+}
