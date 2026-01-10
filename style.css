@@ -12,6 +12,7 @@ body {
     margin-top: 50px;
     margin-bottom: -10px;
     max-width: 1920px;
+    overflow-x: hidden;
 }
 
 a {
@@ -395,3 +396,4 @@ a:hover {
     rotate: -45deg;
     translate: 0px -5px;
 }
+
