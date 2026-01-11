@@ -3,6 +3,8 @@ html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     white-space-collapse: collapse;
     overflow-x: clip;
+
+    width: 100%;
 }
 
 body {
@@ -14,6 +16,8 @@ body {
     margin-bottom: -10px;
     /*max-width: 1920px;*/
     overflow-x: clip;
+
+    width: 100%;
 }
 
 a {
@@ -397,6 +401,7 @@ a:hover {
     rotate: -45deg;
     translate: 0px -5px;
 }
+
 
 
 
