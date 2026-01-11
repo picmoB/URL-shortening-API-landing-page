@@ -3,6 +3,7 @@ html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     white-space-collapse: collapse;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 body {
@@ -13,7 +14,8 @@ body {
     margin-top: 50px;
     margin-bottom: -10px;
     width: 100%;
-    overflow-x: clip;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 a {
@@ -397,6 +399,7 @@ a:hover {
     rotate: -45deg;
     translate: 0px -5px;
 }
+
 
 
 
