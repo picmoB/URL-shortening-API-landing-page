@@ -177,6 +177,11 @@
 
     /* ----------------- */
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .top-part {
         margin-bottom: 5px;
     }
@@ -310,3 +315,4 @@
         width: 100%;
     }
 }
+
