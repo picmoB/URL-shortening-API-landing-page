@@ -12,9 +12,8 @@ body {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: -10px;
-    /*max-width: 1920px;*/
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 a {
@@ -398,6 +397,7 @@ a:hover {
     rotate: -45deg;
     translate: 0px -5px;
 }
+
 
 
 
