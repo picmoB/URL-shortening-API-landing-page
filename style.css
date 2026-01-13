@@ -2,7 +2,7 @@ html {
     background-color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     white-space-collapse: collapse;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     margin-top: 50px;
     margin-bottom: -10px;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 a {

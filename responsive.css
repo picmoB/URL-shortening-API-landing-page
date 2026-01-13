@@ -8,6 +8,7 @@
     border-radius: 25px;
     margin-bottom: 50px;
     transition: 0.5s ease;
+    transform: translateX(-100%);
     padding: 10px;
     font-size: 40px;
     width: 500px;
@@ -15,7 +16,6 @@
 
     /* Novo dodano!!! */
     position: absolute;
-    left: 100%;
     top: 14.5%;
 }
 
@@ -57,16 +57,10 @@
 }
 
 .active {
-    /*
-        Toggling this class must NOT HAVE 'display' property!
-        It is supposed to be added at the appropriate responsive width!
-        'left' or 'right' is the best usage to achieve smooth animation for 'hamburger-menu'.
-    */
     position: relative;
-    transition: 0.5s ease;
+    transform: translate(0);
     margin-left: auto;
     margin-right: auto;
-    left: 0%;
 }
 
 /* Hamburger Menu Lines */
